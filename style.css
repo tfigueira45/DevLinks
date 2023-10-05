@@ -30,6 +30,7 @@
 
 body {
   background: var(--img-url) no-repeat top center/cover;
+  height: 100vh;
   transition: 0.2s all;
 }
 
@@ -149,4 +150,13 @@ footer {
   text-align: center;
   padding: 24px 0;
   font-size: 14px;
+}
+
+@media (min-device-width: 700px){
+  :root{
+    --img-url: url('./assets/bg-desktop.jpg');
+  }
+  .light{
+    --img-url: url('./assets/bg-desktop-light.jpg');
+  }
 }
